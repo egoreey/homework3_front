@@ -1,0 +1,174 @@
+@import "mixins.sass"
+
+.header
+  background-color: white
+
+.header_wrapper
+  width: 1336px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding-top: 16px
+  align-items: center
+  margin-left: 52px
+  margin-right: 52px
+
+  @include device(desktop)
+    width: 89%
+    .header_list
+      display: flex
+      flex-wrap: wrap
+
+    .header_icons
+      display: flex
+
+    .header_item
+      margin-right: 40px
+
+    .header_item:last-child
+      margin-right: 0
+
+    .header_icon_link
+      margin-right: 20px
+      text-decoration: none
+
+    .header_icon_link:last-child
+      margin-right: 0
+
+    .header_link
+      font-size: 14px
+      font-style: normal
+      font-weight: 600
+      line-height: 24px
+      color: black
+      text-decoration: none
+
+  @include device(tablet)
+      display: none
+
+  @include device(mobile)
+      display: none
+
+.header_tablet
+  display: flex
+  width: 100%
+  flex-wrap: wrap
+  justify-content: space-between
+  padding-top: 16px
+  align-items: center
+  margin-left: 52px
+  margin-right: 52px
+
+  @include device(tablet)
+    .header_icons_tablet
+      display: flex
+      justify-content: flex-end
+
+    .header_icon_link_tablet
+      margin-right: 20px
+      text-decoration: none
+
+    .header_icon_link_tablet:last-child
+      margin-right: 0
+
+  @include device(mobile)
+      display: none
+
+  @include device(desktop)
+      display: none
+
+.header_mobile
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  padding: 8px 16px
+
+  @include device(mobile)
+    .header_mobile_icons
+      display: flex
+      align-items: center
+      gap: 16px
+    .header_icon_link_mobile
+      margin-right: 20px
+      text-decoration: none
+
+  @include device(desktop)
+    display: none
+  @include device(tablet)
+    display: none
+
+.content_header
+  display: flex
+  align-items: center
+
+  @include device(desktop)
+    .content
+      width: 1336px
+      display: grid
+      grid-template-columns: 1fr 1fr
+      align-items: center
+
+    .content_text
+      padding-bottom: 207px
+      padding-top: 207px
+      padding-right: 134px
+      padding-left: 100px
+
+    .see_collection
+      color: black
+      padding-top: 28px
+
+    .left_right_buttons
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-left: 52px
+      padding-right: 52px
+      position: absolute
+      width: 88%
+
+
+  @include device(tablet)
+    .content
+      display: flex
+      flex-direction: column
+      align-items: center
+
+
+    .content_item
+      width: 100%
+
+    .content_text
+      padding-top: 50px
+      padding-right: 134px
+      padding-left: 100px
+      padding-bottom: 50px
+
+    .see_collection
+      color: black
+      padding-top: 28px
+
+
+  @include device(mobile)
+    .content
+      display: flex
+      flex-direction: column
+
+    .content_item
+      width: 100%
+
+    .content_text
+      padding-left: 16px
+      padding-bottom: 24px
+      padding-right: 134px
+
+    .see_collection
+      color: black
+
+.left_right_buttons
+  @include device(tablet)
+    display: none
+  @include device(mobile)
+    display: none

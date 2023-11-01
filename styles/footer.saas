@@ -1,0 +1,173 @@
+@import "mixins.sass"
+.footer
+  display: flex
+  align-items: center
+  flex-direction: column
+
+
+.footer_content
+  width: 1336px
+  background: #F9FAFB
+  display: flex
+  flex-direction: row
+
+  @include device(desktop)
+    padding: 72px 52px 32px 52px
+    gap: 500px
+    width: 89%
+    .left
+      display: flex
+      flex-direction: column
+      gap: 20px
+      width: 25%
+
+    .icons
+      display: flex
+      gap: 16px
+
+    .columns
+      display: flex
+      flex-direction: row
+      gap: 120px
+
+    .links
+      text-decoration: none
+      color: #5F6980
+
+  @include device(tablet)
+    width: 100%
+    padding: 72px 16px 32px 16px
+    gap: 120px
+    .left
+      display: flex
+      flex-direction: column
+      gap: 20px
+      width: 25%
+
+    .icons
+      display: flex
+      gap: 16px
+
+    .columns
+      display: flex
+      flex-direction: row
+      gap: 120px
+
+    .links
+      text-decoration: none
+      color: #5F6980
+
+  @include device(mobile)
+    display: none
+
+.bottom
+  display: flex
+  flex-direction: row
+  width: 1336px
+  background: #F9FAFB
+  border-top: 1px solid #D0D5DD
+  gap: 930px
+
+  @include device(desktop)
+    width: 89%
+    padding-right: 52px
+    padding-left: 52px
+    .bottom_button
+      display: flex
+      flex-direction: row
+      gap: 32px
+      align-items: center
+      justify-content: center
+
+    .bottom_button_item
+      padding-top: 18px
+
+  @include device(tablet)
+    width: 100%
+    padding-right: 16px
+    padding-left: 16px
+    gap: 390px
+    .bottom_button
+      display: flex
+      flex-direction: row
+      gap: 32px
+      align-items: center
+      justify-content: center
+
+    .bottom_button_item
+      padding-top: 18px
+
+  @include device(mobile)
+    display: none
+
+.footer_content_mobile
+  display: flex
+  width: 100%
+  padding: 48px 16px 24px 16px
+  flex-direction: column
+  gap: 24px
+
+  @include device(mobile)
+    .footer_content_mobile_header
+      display: flex
+      flex-direction: column
+      gap: 16px
+
+    .footer_content_mobile_menu
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+    .elements_dropdown_mobile
+      display: flex
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      border-bottom: 1px solid #D0D5DD
+
+    .selectors_mobile
+      display: flex
+      width: 100%
+      gap: 32px
+      padding-top: 32px
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+    .Eng_USD
+      display: flex
+      flex-direction: row
+      gap: 24px
+      align-items: center
+      justify-content: center
+
+    .footer_icons_mobile
+      display: flex
+      flex-direction: row
+      gap: 16px
+      align-items: center
+      justify-content: center
+
+    .flag_item
+      display: flex
+      padding-top: 17px
+
+    .footer_content_mobile_text
+      display: flex
+      color: #5F6980
+      text-align: center
+
+  @include device(desktop)
+    display: none
+  @include device(tablet)
+    display: none
+
+
+
+
+
+
+
+
+
